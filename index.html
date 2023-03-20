@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andy Nguyen's Portfolio</title>
     <link rel="stylesheet" href="./assets/styles.css">
+    <script src="https://kit.fontawesome.com/396510493f.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="header">
@@ -13,11 +14,11 @@
             <nav>
                 <img src="./assets/images/logo.png" class="logo">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Work</a></li>
-                    <li><a href="#">Resume</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <div class="header-text">
@@ -54,8 +55,6 @@
                     <div class="tab-contents" id="experience">
                         <ul>
                             <li><span>N/A</span><br>Currently no experience</li>
-                            <li><span>N/A</span><br>Currently no experience</li>
-                            <li><span>N/A</span><br>Currently no experience</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
@@ -68,6 +67,98 @@
                 </div>
         </div>
     </div>
+<!-- -------work------- -->
+<div id="work">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div>
+                <i class="fa-sharp fa-solid fa-code"></i>
+                <h2>Project 1</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere sunt dolorem eaque rerum explicabo nobis inventore. </p>
+                <a href="#">Link to project</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-html5"></i>
+                <h2>Project 2</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere sunt dolorem eaque rerum explicabo nobis inventore.</p>
+                <a href="#">Link to project</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-css3"></i>
+                <h2>Project 3</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere sunt dolorem eaque rerum explicabo nobis inventore.</p>
+                <a href="#">Link to project</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-square-js"></i>
+                <h2>Project 4</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere sunt dolorem eaque rerum explicabo nobis inventore.</p>
+                <a href="#">Link to project</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-node-js"></i>
+                <h2>Project 5</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere sunt dolorem eaque rerum explicabo nobis inventore.</p>
+                <a href="#">Link to project</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -------resume------- -->
+<div id="resume">
+    <div class="container">
+        <h1 class="sub-title">My Resume</h1>
+        <div class="resume-list">
+            <div class="resume">
+                <img src="./assets/images/basketball.jpeg">
+                <div class="layer">
+                    <h3>Magna</h3>
+                    <br>
+                    <p>Senior IT Analyst</p>
+                    <a href="https://www.magna.com/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="resume">
+                <img src="./assets/images/controller.jpeg">
+                <div class="layer">
+                    <h3>City of Toronto</h3>
+                    <br>
+                    <p>Application & Technical Support 2</p>
+                    <a href="https://www.toronto.ca/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="resume">
+                <img src="./assets/images/car.jpeg">
+                <div class="layer">
+                    <h3>Deloitte</h3>
+                    <br>
+                    <p>IT Analyst</p>
+                    <a href="https://www2.deloitte.com/ca/en/pages/about-deloitte/articles/home.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="./assets/resume/Andy Nguyen Resume (03_20_23).pdf" download class="btn">See more</a>
+    </div>
+</div>
+<!-- -------contact------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row"></div>
+            <div class="contact-left"></div>
+                <h1 class="sub-title">Contact</h1>
+                    <p><i class="fa-solid fa-envelope"></i> nguyen3andy@gmail.com</p>
+                    <p><i class="fa-solid fa-mobile"></i> 123 456 7890</p>
+            <div class="social-icons">
+                <a href="https://github.com/angyn3"><i class="fa-brands fa-github"></i></a> 
+                <a href="https://www.linkedin.com/in/andynguyen3"><i class="fa-brands fa-linkedin"></i></a> 
+            </div>
+    </div>
+    <div class="copyright">
+        <p>Made with stress by Andy Nguyen 🤯</p>
+    </div>
+</div>
+
 <script>
         
     var tablinks = document.getElementsByClassName("tab-links");
@@ -81,7 +172,7 @@
             tabcontent.classList.remove("active-tab"); 
         }
         event.currentTarget.classList.add("active-link");
-        document.getElementById(tabName).classList.add("active-tab");
+        document.getElementById(tabname).classList.add("active-tab");
     }
         
 </script>        
